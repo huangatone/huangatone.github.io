@@ -1,0 +1,127 @@
+
+
+<html>
+   <head>
+      <title>SharkTecher Group</title>
+      <style>
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1000px; /* Used in this example to enable scrolling */
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+.box {
+    float: relative;
+    width: 90%;
+    padding: 50px;
+    
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.leftBar {
+  background-color: #f1f1f1;
+  position:fixed;
+   top:50%;
+   left:5px;
+  width: 180px;
+  border: 0px solid #73AD21;
+  padding: 10px;
+  flex-direction: column;
+}
+
+.content  {
+  background-color: #f1f1f1;
+ 
+  margin: 10px;
+  top:70px;
+  left:200px;
+  position: relative;
+ 
+}
+
+</style>
+
+<meta charset="UTF-8">
+   </head>
+   
+<body>
+    <div class="navbar">
+    <a href="../index.html"><image src="../image/home.png" width= 24px height=24px/>HOME</a>
+    <a href="../blogs.html"><image src="../image/blog.png" width= 24px height=24px/> BLOG</a>
+    <a href="../articels.html"><image src="../image/articles.png" width= 24px height=24px/>ARTICLES</a>
+    <a href="download.html"><image src="../image/sourcecodes.png" width= 24px height=24px/>SOURCE CODES</a>
+    <a href="../project.html"><image src="../image/project.png" width= 24px height=24px/>PROJECTS</a>
+    <a href="../books.html" ><image src="../image/books.png" width= 24px height=24px/>BOOKS</a>
+    <a href="../blogs.html"> <image src="../image/home.png" width= 24px height=24px/>Blogs </a>
+    </div>
+
+    <div class="leftBar" >
+      <center><div style=" margin:0 auto;"> <image src="../image/portrait.png" width= 80px height=80px/></div></center>
+  <div>Rong's Tech Blog</div>
+  <div><a href ="https://twitter.com/ronghua95054401"> <image src="../image/twitter.png" width= 16px height=16px/> Twitter </a></div>
+  <div><a href =""> <image src="../image/facebook.png" width= 16px height=16px/>FaceBook</a></div>  
+  <div><a href ="https://www.linkedin.com/in/rong-huang-61751047/?midToken=AQEjFdDeh4SCOQ&trk=eml-email_jobs_viewed_job_reminder_01-header-73-profile&trkEmail=eml-email_jobs_viewed_job_reminder_01-header-73-profile-null-2qj4oj%7Ek0iecbkz%7E5n-null-neptune%2Fprofile%7Evanity%2Eview"> <image src="../image/linkedin.png" width= 16px height=16px/>LinkedIn</a></div>
+  <div><a href ="mailto:huang.rong.bj@gmail.com"> <image src="../image/gmail.png" width= 16px height=16px/>Gmail</a></div>
+  <div><a href ="https://github.com/huangatone"> <image src="../image/github.png" width= 16px height=16px/>Github</a></div>  
+  <div><a href =""> <image src="../image/wiki.png" width= 16px height=16px/>WiKi</a></div>
+  <div><a href =""> <image src="../image/wchart.png" width= 16px height=16px/>WChart</a></div>
+  <div><a href ="index.html"> <image src="../image/home.png" width= 16px height=16px/>Home</a></div>
+  
+</div>
+
+<div class="content" style="width:70%;">
+
+ <h2>Test</h2>
+
+   In traditionly, using a thread has three phases: create(P1), excute(P2), distroy(P3).
+It is obviously a thread occupies time is P1+ P3, and the thread excute a task time is P2.
+It means if the task is a short-term task, the thread itself is very expensive.
+And if the count of threads is more than the CPU count, CPU need time to awake a thread and cost time too.
+Now we need a thread pool, in the pool we will create enough threads according to the CPU number.
+
+</div>
+
+
+
+  <br/><br/><br/><br/>
+  <center>
+  <p>Copyright © 2015 Ron</p>
+  </center>
+</body>
+</html>
