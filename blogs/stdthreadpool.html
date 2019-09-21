@@ -108,7 +108,7 @@ body {margin:0;}
 <div class="content" style="width:70%;">
 
  <h2>std Thread Pool</h2>
-
+<pre>
    In traditionly, using a thread has three phases: create(P1), excute(P2), distroy(P3).
 It is obviously a thread occupies time is P1+ P3, and the thread excute a task time is P2.
 It means if the task is a short-term task, the thread itself is very expensive.
@@ -116,7 +116,7 @@ And if the count of threads is more than the CPU count, CPU need time to awake a
 So we need a thread pool, in the pool we will create enough threads according to the CPU number.
 
 Here I will present how to use a std::thread and std::thread to implementate a thread pool.
-  
+  </pre>
     <div class="box" style="background-color:#bbb">
     
 <h2>Codes</h2>
