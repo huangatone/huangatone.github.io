@@ -121,9 +121,8 @@ Here I will present how to use a QThread and std::thread to implementate a threa
     
 <h2>Class MyThread</h2>
 <pre class='brush: cpp'>
-  // my first program in C++
-  #include <QThread>
-#include <QObject>
+  #include < QThread>
+#include < QObject>
 
 class MyThread: public QThread
 {
@@ -150,8 +149,8 @@ protected:
 
     <pre class='brush: cpp'>
   // my first program in C++
-  #include <QThread>
-#include <QObject>
+  #include < QThread>
+#include < QObject>
 class MyPool: public QObject
 {
   Q_OBJECT
@@ -166,8 +165,8 @@ protected:
   void slotFinished();
 private:
 
-  QList<MyThread*> _lt;
-  QList<void (*)(QString)> _ltTasks;
+  QList< MyThread*> _lt;
+  QList< void (*)(QString)> _ltTasks;
 };
   </pre>
 
@@ -180,7 +179,7 @@ private:
     
    
     <pre class='brush: cpp'>
-  #include <QDebug>
+  #include < QDebug>
 
 MyThread::MyThread(QObject *parent )
   :QThread(parent)
@@ -237,13 +236,13 @@ void MyPool::setWork(void (*fun)(QString))
 
 void MyPool::slotStarted()
 {
-  auto th = dynamic_cast<MyThread*>( sender());
+  auto th = dynamic_cast< MyThread*>( sender());
   qDebug() << __FUNCTION__ << " Thread are started"<< _lt.indexOf(th);
 }
 
 void MyPool::slotFinished()
 {
-  auto th = dynamic_cast<MyThread*>( sender());
+  auto th = dynamic_cast< MyThread*>( sender());
   qDebug() << __FUNCTION__ << " Thread are finished" << _lt.indexOf(th);
   // start waitting task
   if( _ltTasks.count() > 0)
