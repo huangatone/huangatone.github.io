@@ -9,7 +9,7 @@ body {margin:0;}
 .navbar {
   overflow: hidden;
   background-color: #333;
-  position: fixed;
+  position: relative;
   top: 0;
   width: 100%;
 }
@@ -28,14 +28,11 @@ body {margin:0;}
   background: #ddd;
   color: black;
 }
-.container {
-    position: relative;
-    top:70px;
-}
+
 .main {
   padding: 16px;
   margin-top: 30px;
-  height: 1500px; /* Used in this example to enable scrolling */
+  height: 1000px; /* Used in this example to enable scrolling */
 }
 
 
@@ -45,18 +42,39 @@ body {margin:0;}
 
 
 .box {
-    float: left;
-    top: 50px;
-    width: 33.33%;
+    float: relative;
+    width: 90%;
     padding: 50px;
+    
 }
 
 .clearfix::after {
     content: "";
     clear: both;
-    top: 30px;
     display: table;
 }
+
+.leftBar {
+  background-color: #f1f1f1;
+  position:fixed;
+   top:50%;
+   left:5px;
+  width: 180px;
+  border: 0px solid #73AD21;
+  padding: 10px;
+  flex-direction: column;
+}
+
+.content  {
+  background-color: #f1f1f1;
+ 
+  margin: 10px;
+  top:70px;
+  left:200px;
+  position: relative;
+ 
+}
+
 </style>
 
 <meta charset="UTF-8">
@@ -64,43 +82,44 @@ body {margin:0;}
    
 <body>
     <div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="course.html">Courses</a>
-    <a href="contact.html">Contact</a>
-    <a href="download.html">Download/教材下载</a>
-    <a href="event.html" float=right>Event</a>
-    <a href="location.html" >Location</a>
-    <a href="blogs.html"> Blogs </a>
+    <a href="index.html"><image src="image/home.png" width= 24px height=24px/>HOME</a>
+    <a href="blogs.html"><image src="image/blog.png" width= 24px height=24px/> BLOG</a>
+    <a href="articels.html"><image src="image/articles.png" width= 24px height=24px/>ARTICLES</a>
+    <a href="download.html"><image src="image/sourcecodes.png" width= 24px height=24px/>SOURCE CODES</a>
+    <a href="project.html"><image src="image/project.png" width= 24px height=24px/>PROJECTS</a>
+    <a href="books.html" ><image src="image/books.png" width= 24px height=24px/>BOOKS</a>
+    <a href="event.html"> <image src="image/event.png" width= 24px height=24px/>Kids Event </a>
     </div>
 
-    <br><br>
-
-<div class="clearfix">
-  <div class="box" style="background-color:#eee">
-  <div style = "border: 1px solid green ;top: 50px;padding: 50px;">
-
-</div>
-</div>
-
-<div class="box" style="background-color:#ccc">
-<div style = "border: 1px solid green ;top: 50px;padding: 50px;">
-
-</div>
-</div>
-
-<div class="box" style="background-color:#ddd">
-<div style = "border: 1px solid green ;top: 50px;padding: 50px;">
-
-</div>
-</div>
+    <div class="leftBar" >
+      <center><div style=" margin:0 auto;"> <image src="image/portrait.png" width= 80px height=80px/></div></center>
+  <div>Rong's Tech Blog</div>
+  <div><a href ="https://twitter.com/ronghua95054401"> <image src="image/twitter.png" width= 16px height=16px/> Twitter </a></div>
+  <div><a href =""> <image src="image/facebook.png" width= 16px height=16px/>FaceBook</a></div>  
+  <div><a href ="https://www.linkedin.com/in/rong-huang-61751047/?midToken=AQEjFdDeh4SCOQ&trk=eml-email_jobs_viewed_job_reminder_01-header-73-profile&trkEmail=eml-email_jobs_viewed_job_reminder_01-header-73-profile-null-2qj4oj%7Ek0iecbkz%7E5n-null-neptune%2Fprofile%7Evanity%2Eview"> <image src="image/linkedin.png" width= 16px height=16px/>LinkedIn</a></div>
+  <div><a href ="mailto:huang.rong.bj@gmail.com"> <image src="image/gmail.png" width= 16px height=16px/>Gmail</a></div>
+  <div><a href ="https://github.com/huangatone"> <image src="image/github.png" width= 16px height=16px/>Github</a></div>  
+  <div><a href =""> <image src="image/wiki.png" width= 16px height=16px/>WiKi</a></div>
+  <div><a href =""> <image src="image/wchart.png" width= 16px height=16px/>WChart</a></div>
+  <div><a href ="index.html"> <image src="image/home.png" width= 16px height=16px/>Home</a></div>
+  
 </div>
 
+<div class="content" style="width:70%;">
+
+ <h2>Coming Event</h2>
+<li><a href = "http://www.jacocompanyprogram.org/aspx/CPHomePage"> JA Central Ontario's Company Program </a></li>
+<li><a href = "https://mathplus.math.utoronto.ca/home/mentorship?from=singlemessage&isappinstalled=0"> mentorship </a></li>
+<li><a href = "https://www.he360.com/hawkeye-360-awards-contract-to-build-next-generation-constellation/?utm_source=social&utm_medium=twitter&utm_campaign=he360pr"> HAWKEYE 360 AWARDS CONTRACT TO BUILD NEXT-GENERATION SATELLITE CONSTELLATION TO ACHIEVE RAPID REVISIT FOR GLOBAL SPECTRUM AWARENESS   </a></li>
+   <li><a href = "https://mp.weixin.qq.com/s/u3WXvChCKkml3WTbVkmjQg"> SKYKY出版社将要在本周日参加多伦多一年一度的书展WORD on the STREET </a></li>
+<li><a href = "https://thewordonthestreet.ca/toronto/"> SKYKY WORD on the STREET </a></li>
+</div>
 
 
-  <br/><br/>
-  <div class ="container"> 
+
+  <br/><br/><br/><br/>
   <center>
-  <p>Copyright © 2010</p>
-  </center></div>
+  <p>Copyright © 2015 Ron</p>
+  </center>
 </body>
 </html>
